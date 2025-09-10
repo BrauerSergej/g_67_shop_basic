@@ -15,6 +15,10 @@ public class Customer {
         this.id = id;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
@@ -31,4 +35,6 @@ public class Customer {
     public String toString() {
         return String.format("Customer: id - %d, name - %s, active - %b", id, name, active);
     }
+
+
 }
