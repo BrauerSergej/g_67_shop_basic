@@ -11,6 +11,10 @@ public class Customer {
     private boolean active;
     private List<Product> cart = new ArrayList<>();
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
