@@ -18,11 +18,22 @@ public class CustomerRepository {
         return customer;
     }
 
-    public List<Customer> findAll(){
+    public List<Customer> findAll() {
         return new ArrayList<>(database.values());
     }
 
-    public Customer findById(Long id){
+    public Customer findById(Long id) {
         return database.get(id);
+    }
+
+    public void update(Long id, String newName) {
+        Customer customer = database.get(id);
+        if (customer != null) {
+            customer.setName(newName);
+        }
+    }
+
+    public void deleteById(Long id){
+        database.remove(id);
     }
 }
