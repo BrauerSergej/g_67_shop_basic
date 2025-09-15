@@ -26,6 +26,22 @@ public class Product {
         this.price = price;
     }
 
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
