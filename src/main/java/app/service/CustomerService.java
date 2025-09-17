@@ -12,7 +12,7 @@ import java.util.List;
 public class CustomerService {
 
     private final CustomerRepository repository = new CustomerRepository();
-    private final ProductService productService = new ProductService();
+    private final ProductService productService = ProductService.getInstance();
 
 
     //Сохранить покупателя в базе данных (при сохранении покупатель автоматически считается активным).
