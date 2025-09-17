@@ -60,7 +60,7 @@ public class ProductController {
     }
 
 //    Вернуть общее количество продуктов в базе данных (активных).
-    public int getProductCount() {
+    public int getProductsCount() {
         return service.getActiveProductsCount();
     }
 
